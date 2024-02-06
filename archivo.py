@@ -12,9 +12,9 @@ class JuegoRPG(Videojuego):
         return "RPG"
     
 #Produco concreto    
-class JuegoShotter(Videojuego):
+class JuegoShooter(Videojuego):
     def obtenerNombre(self):
-        return "Shotter"
+        return "Shooter"
     
 #Producto concreto    
 class JuegoPlataforma(Videojuego):
@@ -36,7 +36,7 @@ class FabricaPC(FabricaVideojuegos):
         return JuegoPlataforma
     
     def crearVideojuego():
-        return JuegoShotter
+        return JuegoShooter
     
 class FabricaConsola(FabricaVideojuegos):
     def crearVideojuego():
@@ -46,7 +46,7 @@ class FabricaConsola(FabricaVideojuegos):
         return JuegoPlataforma
     
     def crearVideojuego():
-        return JuegoShotter
+        return JuegoShooter
     
 class Cliente:
     def __init__(self, FabricaVideojuegos):
