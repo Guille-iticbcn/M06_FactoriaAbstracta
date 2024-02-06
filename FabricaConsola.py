@@ -1,3 +1,8 @@
+from archivo import FabricaVideojuegos
+from iJuegoPlataforma import JuegoPlataforma
+from iJuegoRPG import JuegoRPG
+from iJuegoShooter import JuegoShooter
+
 #Factorias Concretas
 class FabricaConsola(FabricaVideojuegos):
     def crearVideojuego():
